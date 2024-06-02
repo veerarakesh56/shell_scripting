@@ -1,7 +1,5 @@
 #!/bin/bash
 
-helper()
-
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -45,6 +43,10 @@ function helper {
         exit 1
     fi
 }
+
+# Check command line arguments
+
+helper "$@"
 
 # Main script
 
